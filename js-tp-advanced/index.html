@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TP JavaScript Avancé — Exercices</title>
+  <style>
+    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin: 20px; line-height:1.5 }
+    pre { background:#f5f5f5; padding:10px; border-radius:6px; overflow:auto }
+    section { border:1px solid #eee; padding:12px; margin-bottom:12px; border-radius:8px; box-shadow: 0 1px 4px rgba(0,0,0,0.03) }
+    h1,h2 { margin:6px 0 }
+    button { padding:8px 12px; border-radius:6px; cursor:pointer; }
+    .output { margin-top:8px; white-space:pre-wrap; font-family: monospace; }
+    .mini-project { display:flex; gap:12px; align-items:flex-start; flex-wrap:wrap }
+    .card { padding:10px; border-radius:8px; box-shadow:0 1px 6px rgba(0,0,0,0.06); background:#fff }
+    .posts { max-width:640px }
+  </style>
+</head>
+<body>
+  <h1>TP — JavaScript Avancé (solution fournie)</h1>
+  <p>Les exercices sont exécutables via les boutons ci-dessous. Ouvrez la console (F12) pour voir les logs plus détaillés.</p>
+
+  <section id="part1">
+    <h2>Partie 1 — Rappel et Syntaxe moderne</h2>
+
+    <div class="card">
+      <h3>Exercice 1 — Variables et portée</h3>
+      <button id="run-e1">Exécuter Exo 1</button>
+      <div id="out-e1" class="output"></div>
+    </div>
+
+    <div class="card">
+      <h3>Exercice 2 — Fonctions fléchées</h3>
+      <button id="run-e2">Exécuter Exo 2</button>
+      <div id="out-e2" class="output"></div>
+    </div>
+
+    <div class="card">
+      <h3>Exercice 3 — Destructuring</h3>
+      <button id="run-e3">Exécuter Exo 3</button>
+      <div id="out-e3" class="output"></div>
+    </div>
+
+    <div class="card">
+      <h3>Exercice 4 — Spread Operator</h3>
+      <button id="run-e4">Exécuter Exo 4</button>
+      <div id="out-e4" class="output"></div>
+    </div>
+  </section>
+
+  <section id="part2">
+    <h2>Partie 2 — Objets, Classes, Tableaux</h2>
+
+    <div class="card">
+      <h3>Exercice 5 — Objet simple</h3>
+      <button id="run-e5">Exécuter Exo 5</button>
+      <div id="out-e5" class="output"></div>
+    </div>
+
+    <div class="card">
+      <h3>Exercice 6 — Classe ES6</h3>
+      <button id="run-e6">Exécuter Exo 6</button>
+      <div id="out-e6" class="output"></div>
+    </div>
+
+    <div class="card">
+      <h3>Exercice 7 — Tableaux avancés</h3>
+      <button id="run-e7">Exécuter Exo 7</button>
+      <div id="out-e7" class="output"></div>
+    </div>
+  </section>
+
+  <section id="part3">
+    <h2>Partie 3 — Asynchronisme et API</h2>
+
+    <div class="card">
+      <h3>Exercice 8 — Promesse simple</h3>
+      <button id="run-e8">Exécuter Exo 8</button>
+      <div id="out-e8" class="output"></div>
+    </div>
+
+    <div class="card posts mini-project">
+      <div>
+        <h3>Exercice 9 — Fetch + async/await (mini-projet)</h3>
+        <p>Récupère les posts depuis <code>jsonplaceholder.typicode.com/posts</code> et affiche les 5 premiers titres.</p>
+        <button id="run-e9">Charger les 5 premiers posts</button>
+        <button id="run-e9-refresh">Rafraîchir</button>
+        <div id="out-e9" class="output"></div>
+      </div>
+      <div style="min-width:260px">
+        <h4>Mini-projet — aperçu</h4>
+        <div id="mini-screenshot" style="width:240px;height:160px;border-radius:6px;background:linear-gradient(135deg,#eef,#fff);display:flex;align-items:center;justify-content:center;text-align:center">
+          <small>Mini-projet : liste de posts (capture à prendre localement)</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="deliverables">
+    <h2>Livrables & commandes Git</h2>
+    <pre id="git-instructions">
+git init
+git add index.html script.js README.md
+git commit -m "Partie 1 — exercices ES6+"
+# Après avoir réalisé la partie 2 :
+git add .
+git commit -m "Partie 2 — objets / classes / tableaux"
+# Après la partie 3 :
+git add .
+git commit -m "Partie 3 — asynchronisme + mini-projet"
+    </pre>
+    <p>Voir README dans l'archive fournie.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
